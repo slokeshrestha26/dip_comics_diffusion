@@ -9,9 +9,9 @@
   - [ ] Blog 2:
      
 ## Log into TACC
-______
-ssh asvin@ls6.tacc.utexas.edu
-LuckyMonkey!!
+`ssh asvin@ls6.tacc.utexas.edu`  
+LuckyMonkey!!  
+\< Get TACC Code from Asvin \>
 
 TACC has three main directories, 
 1. /home/
