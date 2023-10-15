@@ -1,5 +1,4 @@
-# dip_comics_diffusion
-DIP final project
+# DIP final project
 
 ## To Dos:
 - [X] Find the peanuts model (https://civitai.com/models/17361/peanuts-comics-art-style)
