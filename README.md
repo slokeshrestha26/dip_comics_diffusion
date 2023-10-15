@@ -2,7 +2,7 @@
 
 ## To Dos:
 - [X] Find the peanuts model (https://civitai.com/models/17361/peanuts-comics-art-style)
-- [ ] Setup TACC
+- [X] Setup TACC
 - [X] Get the calvin and hobbes dataset
 - [ ] Read blogs on diffusion model fine tuning
   - [ ] Civitai Wiki: https://github.com/civitai/civitai/wiki/How-to-use-models
