@@ -32,3 +32,17 @@ You can also do `cdw folder-name` to directly navigate to that folder in /work. 
 
 
 ## Blogs of Interest
+### Keyword conditioning
+## Finetuning on dataset
+1. Pokemon finetuning example: https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning  
+CUB Dataset: https://paperswithcode.com/dataset/cub-200-2011  
+CUB Dataset: https://huggingface.co/datasets/alkzar90/CC6204-Hackaton-Cub-Dataset/viewer/default/test
+2. Huggingface:
+Start here: https://huggingface.co/docs/diffusers/index  
+LoRA: https://huggingface.co/docs/diffusers/training/lora
+Training Examples: https://huggingface.co/docs/diffusers/training/overview  
+Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
+Text2Img: https://huggingface.co/docs/diffusers/training/text2image
+
+
+4. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
