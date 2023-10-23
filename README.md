@@ -28,8 +28,16 @@ Use command `cdw` to go to the /work directory.
 Use command `cds` to go the /scratch directory.
 You can also do `cdw folder-name` to directly navigate to that folder in /work. This format works for /scratch too.
 
+Use the virtual env at `dipenv/`
+Use the following command to activate: `source dipenv/bin/activate`
+
 ## Calvin & Hobbes Dataset
 
+- [X] Find a calvin and hobbes dataset
+- [X] Download it
+- [X] Extract images
+- [ ] Select only the black and white panels
+- [ ] Crop panels
 
 ## Blogs of Interest
 ### Keyword conditioning
@@ -44,3 +52,4 @@ LoRA: https://huggingface.co/docs/diffusers/training/lora
 Training Examples: https://huggingface.co/docs/diffusers/training/overview  
 Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
 Text2Img: https://huggingface.co/docs/diffusers/training/text2image
+
