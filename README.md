@@ -28,6 +28,15 @@ We're gonna do something very similar.
 * We're gonna use [controlnet](https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet) to create masks/edges of the an input image.
 * We're gonna get outputs.
 
+### Experiments to try
+
+1. LoRA  
+2. DreamBooth  
+3. Textual Inversion
+4. Fine-tune existing cartoonifier [checkpoint](https://civitai.com/models/17368/pseudo-peanuts-cartoonifier-art-style)  
+5. Increasing training input size
+6. Inference - jay hartzell, bevo, taylor swift, mona lisa and other famous paintings
+
 ### Keyword conditioning
 1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
 
