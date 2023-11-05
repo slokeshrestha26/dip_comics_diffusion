@@ -4,6 +4,9 @@
 - [X] Find the peanuts model (https://civitai.com/models/17361/peanuts-comics-art-style)
 - [X] Setup TACC
 - [X] Get the calvin and hobbes dataset
+- [X] Go through the diffusion model course (Sharon Zhou)
+- [ ] Debug the LoRA collab notebook
+- [ ] Read the HuggingFace LoRA implementation API
 - [ ] Read blogs on diffusion model fine tuning
   - [ ] Civitai Wiki: https://github.com/civitai/civitai/wiki/How-to-use-models
   - [ ] Blog 2:
