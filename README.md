@@ -11,29 +11,23 @@
   - [ ] Civitai Wiki: https://github.com/civitai/civitai/wiki/How-to-use-models
   - [ ] Blog 2:
      
-## Log into TACC
-`ssh asvin@ls6.tacc.utexas.edu`  
-LuckyMonkey!!  
-\< Get TACC Code from Asvin \>
-
-TACC has three main directories, 
-1. /home/
-2. /work/
-3. /scratch/
-
-Use /home just as a login landing page. Don't save much here. 
-
-Use /work to put all code. Create a folder for our project here.
-
-Use /scratch for saving datasets. If data saved here is not modified/accessed once in every 2 weeks it'll get deleted.
-
-Use command `cdw` to go to the /work directory.
-Use command `cds` to go the /scratch directory.
-You can also do `cdw folder-name` to directly navigate to that folder in /work. This format works for /scratch too.
 
 ## Calvin & Hobbes Dataset
 
 ## Blogs of Interest
+## Plan
+
+So, here's what HuggingFace did for a the ghibli LoRA example.
+* They took a txt2img ghibli diffusion model. 
+* Passed it through an img2img pipeline. 
+* Got outputs. 
+
+We're gonna do something very similar. 
+* We're gonna fine-tune a txt2img LoRA model for calvin and hobbes. 
+* We're gonna plug that into an img2img pipeline.
+* We're gonna use [controlnet](https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet) to create masks/edges of the an input image.
+* We're gonna get outputs.
+
 ### Keyword conditioning
 1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
 
@@ -65,16 +59,24 @@ LoRA training training examples:
 2. https://huggingface.co/docs/diffusers/training/lora#texttoimage
 3. (Example) https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/img2img
 
-## Plan
+## Log into TACC
+`ssh asvin@ls6.tacc.utexas.edu`  
+LuckyMonkey!!  
+\< Get TACC Code from Asvin \>
 
-So, here's what HuggingFace did for a the ghibli LoRA example.
-* They took a txt2img ghibli diffusion model. 
-* Passed it through an img2img pipeline. 
-* Got outputs. 
+TACC has three main directories, 
+1. /home/
+2. /work/
+3. /scratch/
 
-We're gonna do something very similar. 
-* We're gonna fine-tune a txt2img LoRA model for calvin and hobbes. 
-* We're gonna plug that into an img2img pipeline.
-* We're gonna use [controlnet](https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet) to create masks/edges of the an input image.
-* We're gonna get outputs. 
+Use /home just as a login landing page. Don't save much here. 
+
+Use /work to put all code. Create a folder for our project here.
+
+Use /scratch for saving datasets. If data saved here is not modified/accessed once in every 2 weeks it'll get deleted.
+
+Use command `cdw` to go to the /work directory.
+Use command `cds` to go the /scratch directory.
+You can also do `cdw folder-name` to directly navigate to that folder in /work. This format works for /scratch too.
+
 
