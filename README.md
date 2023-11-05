@@ -79,4 +79,13 @@ Use command `cdw` to go to the /work directory.
 Use command `cds` to go the /scratch directory.
 You can also do `cdw folder-name` to directly navigate to that folder in /work. This format works for /scratch too.
 
+Ask for a compute node using the following command:
+`idev -N 1 -p gpu-a100 -m 30:00`
+Use `-p normal` if you don't need GPUs.  
+Use `-m 60:00` if you want it for 60 mins or `-t 1:0:0` if you want it for 2 hours.  
+Use `-N 2` if you need 2 nodes instead.  
+
+Sharan's command is:
+`srun --gres=gpu:2 -c 32 -m 32 --pty /bin/bash`
+
 
