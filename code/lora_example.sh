@@ -1,11 +1,17 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
-export OUTPUT_DIR="/scratch/dip/pokemon"
-export HUB_MODEL_ID="pokemon-lora"
-export DATASET_NAME="lambdalabs/pokemon-blip-captions"
+export OUTPUT_DIR="/scratch/09175/asvin/dip/cnh"
+export HUB_MODEL_ID="cnh"
 
-accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py \
+export DATASET_NAME="/work/09175/asvin/ls6/dip/data/comics/all"
+
+accelerate launch \
+  --mixed_precision="fp16" \
+  --num_processes=3 \
+  --num_machines=1 \
+  --dynamo_backend="no" \
+  train_text_to_image_lora.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
-  --dataset_name=$DATASET_NAME \
+  --train_data_dir=$DATASET_NAME \
   --dataloader_num_workers=8 \
   --resolution=512 --center_crop --random_flip \
   --train_batch_size=1 \
@@ -20,4 +26,5 @@ accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py \
   --report_to=wandb \
   --checkpointing_steps=500 \
   --validation_prompt="A pokemon with blue eyes." \
-  --seed=1337
+  --seed=1337 \
+
