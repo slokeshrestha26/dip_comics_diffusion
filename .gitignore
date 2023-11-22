@@ -1,3 +1,5 @@
 data/
-code/wandb
+code/sloke/
+*wandb*
+out/
 

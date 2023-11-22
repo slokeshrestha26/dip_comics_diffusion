@@ -4,12 +4,15 @@ export HUB_MODEL_ID="cnh"
 
 export DATASET_NAME="/work/09175/asvin/ls6/dip/data/comics/all"
 
+CODEFOLDER="/work/09175/asvin/ls6/dip/code"
+
 accelerate launch \
   --mixed_precision="fp16" \
   --num_processes=3 \
   --num_machines=1 \
   --dynamo_backend="no" \
-  train_text_to_image_lora.py \
+  --multi_gpu \
+  $CODEFOLDER/train_text_to_image_lora.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --train_data_dir=$DATASET_NAME \
   --dataloader_num_workers=8 \
@@ -25,6 +28,10 @@ accelerate launch \
   --hub_model_id=${HUB_MODEL_ID} \
   --report_to=wandb \
   --checkpointing_steps=500 \
-  --validation_prompt="A pokemon with blue eyes." \
+  --validation_prompt="A dog in a car in the style of CNH3000." \
   --seed=1337 \
+  --resume_from_checkpoint="latest" \
+  --cache_dir="/scratch/09175/asvin/.cache/huggingface/hub" \
+
+
 
