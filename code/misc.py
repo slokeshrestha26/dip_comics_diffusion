@@ -24,6 +24,8 @@ def tqdm_joblib(tqdm_object):
         joblib.parallel.BatchCompletionCallBack = old_batch_callback
         tqdm_object.close()
 
+
+
 def moveimgs():
     os.makedirs('data/comics/all', exist_ok=True)
     ctr = 0
@@ -35,13 +37,14 @@ def moveimgs():
             shutil.move(oldname, newname)
             ctr+=1
 
-def makemetadata():
-    filenames = glob('data/comics/all/*.png')
+def makemetadata(folder):
+    filenames = glob(os.path.join(folder, '*.png'))
     filenames = [x.split(os.sep)[-1] for x in filenames]
     textprompts = len(filenames) * ["CNH3000"]
-    dct = {'file_name': filenames, 'additional_feature': textprompts}
+    dct = {'file_name': filenames, 'text': textprompts}
     df = pd.DataFrame(dct)
-    df.to_csv('data/comics/all/metadata.csv', index=False)
+    df.to_csv(os.path.join(folder, 'metadata.csv'), index=False)
+
 
 
 def classifysingleimage(file):
@@ -71,6 +74,8 @@ def classifycolorimages(folder='data/comics/sample/*.png'):
     with tqdm_joblib(tqdm(desc="Classifying based on color", total=len(filenames))):
         joblib.Parallel(n_jobs=100)(joblib.delayed(classifysingleimage)(file) for file in filenames)
     return
+
+
 
 def crop_image(input_image_path, output_image_path, c):
     # Unpack coordinates
@@ -105,7 +110,8 @@ def extractpanels(folder):
 
 if __name__ == '__main__':
     # moveimgs()
-    # makemetadata()
+    # makemetadata('data/comics/all')
+    # makemetadata('data/comics/split/bnw_crop')
     # classifycolorimages('data/comics/all/*.png')
-    extractpanels('data/comics/split/bnw')
+    # extractpanels('data/comics/split/bnw')
     pass

@@ -834,6 +834,7 @@ def main():
                     unet=accelerator.unwrap_model(unet),
                     revision=args.revision,
                     torch_dtype=weight_dtype,
+                    safety_checker=None,
                 )
                 pipeline = pipeline.to(accelerator.device)
                 pipeline.set_progress_bar_config(disable=True)
@@ -889,7 +890,8 @@ def main():
     # Final inference
     # Load previous pipeline
     pipeline = DiffusionPipeline.from_pretrained(
-        args.pretrained_model_name_or_path, revision=args.revision, torch_dtype=weight_dtype
+        args.pretrained_model_name_or_path, revision=args.revision, torch_dtype=weight_dtype,
+        safety_checker=None,
     )
     pipeline = pipeline.to(accelerator.device)
 

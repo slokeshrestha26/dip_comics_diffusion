@@ -97,4 +97,28 @@ Use `-N 2` if you need 2 nodes instead.
 Sharan's command is:
 `srun --gres=gpu:2 -c 32 -m 32 --pty /bin/bash`
 
+Use the virtual env at `dipenv/`
+Use the following command to activate: `source dipenv/bin/activate`
+
+## Calvin & Hobbes Dataset
+
+- [X] Find a calvin and hobbes dataset
+- [X] Download it
+- [X] Extract images
+- [ ] Select only the black and white panels
+- [ ] Crop panels
+
+## Blogs of Interest
+### Keyword conditioning
+1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
+### Finetuning on dataset
+1. Pokemon finetuning example: https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning  
+CUB Dataset: https://paperswithcode.com/dataset/cub-200-2011  
+CUB Dataset: https://huggingface.co/datasets/alkzar90/CC6204-Hackaton-Cub-Dataset/viewer/default/test
+2. Huggingface:
+Start here: https://huggingface.co/docs/diffusers/index  
+LoRA: https://huggingface.co/docs/diffusers/training/lora
+Training Examples: https://huggingface.co/docs/diffusers/training/overview  
+Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
+Text2Img: https://huggingface.co/docs/diffusers/training/text2image
 
