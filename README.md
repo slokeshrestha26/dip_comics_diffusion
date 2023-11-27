@@ -22,16 +22,19 @@
 ## Blogs of Interest
 ### Keyword conditioning
 1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
+
 ### Finetuning on dataset
 1. Pokemon finetuning example: https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning  
 CUB Dataset: https://paperswithcode.com/dataset/cub-200-2011  
 CUB Dataset: https://huggingface.co/datasets/alkzar90/CC6204-Hackaton-Cub-Dataset/viewer/default/test
-2. Huggingface:
-Start here: https://huggingface.co/docs/diffusers/index  
-LoRA: https://huggingface.co/docs/diffusers/training/lora
-Training Examples: https://huggingface.co/docs/diffusers/training/overview  
-Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
-Text2Img: https://huggingface.co/docs/diffusers/training/text2image
+
+2. Huggingface:  
+* a. Start here: https://huggingface.co/docs/diffusers/index  
+    i. Ctrl+F for "Image-to-Image Text-Guided Generation" on https://huggingface.co/docs/diffusers/v0.21.0/en/index  
+* b. LoRA: https://huggingface.co/docs/diffusers/training/lora  
+* c. Training Examples: https://huggingface.co/docs/diffusers/training/overview  
+* d. Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
+* e. Text2Img: https://huggingface.co/docs/diffusers/training/text2image  
 
 ## Plan
 So, here's what HuggingFace did for a the ghibli LoRA example.
@@ -52,24 +55,6 @@ We're gonna do something very similar.
 4. Fine-tune existing cartoonifier [checkpoint](https://civitai.com/models/17368/pseudo-peanuts-cartoonifier-art-style)  
 5. Increasing training input size
 6. Inference - jay hartzell, bevo, taylor swift, mona lisa and other famous paintings
-
-### Keyword conditioning
-1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
-
-### Finetuning on dataset
-1. Pokemon finetuning example: https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning  
-CUB Dataset: https://paperswithcode.com/dataset/cub-200-2011  
-CUB Dataset: https://huggingface.co/datasets/alkzar90/CC6204-Hackaton-Cub-Dataset/viewer/default/test
-
-2. Huggingface:  
-* a. Start here: https://huggingface.co/docs/diffusers/index  
-    i. Ctrl+F for "Image-to-Image Text-Guided Generation" on https://huggingface.co/docs/diffusers/v0.21.0/en/index  
-* b. LoRA: https://huggingface.co/docs/diffusers/training/lora  
-* c. Training Examples: https://huggingface.co/docs/diffusers/training/overview  
-* d. Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
-* e. Text2Img: https://huggingface.co/docs/diffusers/training/text2image  
-
-Ctrl+F for "Image-to-Image Text-Guided Generation" on https://huggingface.co/docs/diffusers/v0.21.0/en/index
 
 DreamBooth training examples:  
 1. https://github.com/nitrosocke/dreambooth-training-guide
