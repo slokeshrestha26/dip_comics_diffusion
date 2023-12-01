@@ -109,9 +109,9 @@ def extractpanels(folder):
         joblib.Parallel(n_jobs=100)(joblib.delayed(crop_image)(input_path(file), output_path(file, i), c) for file in filenames for i, c in enumerate(coordinates))
 
 if __name__ == '__main__':
-    # moveimgs()
-    # makemetadata('data/comics/all')
-    # makemetadata('data/comics/split/bnw_crop')
-    # classifycolorimages('data/comics/all/*.png')
-    # extractpanels('data/comics/split/bnw')
+    moveimgs()
+    makemetadata('data/comics/all')
+    makemetadata('data/comics/split/bnw_crop')
+    classifycolorimages('data/comics/all/*.png')
+    extractpanels('data/comics/split/bnw')
     pass

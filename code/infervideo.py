@@ -5,9 +5,7 @@ from diffusers import StableDiffusionImg2ImgPipeline
 from glob import glob
 from tqdm import tqdm
 from os.path import join, exists
-# import argparse
 import ffmpeg
-# import cv2
 import os
 
 
@@ -89,14 +87,8 @@ def diffusioncall(img):
     prompt += 'in the style of CNH3000'
     generator = torch.Generator(device=device).manual_seed(1024)
     image = pipe(prompt=prompt, image=img, strength=0.6, guidance_scale=7.5, generator=generator).images[0]
-    # image.save("testoutput/taytay_cnh4.png")
     return image
 
-# def parseargs():
-#     parser = argpase.ArgumentParser()
-#     parser.add_argument('-v', '--video', type=str, help='Path to video file')
-#     args = parser.parse_args()
-#     return args
 
 if __name__ == '__main__':
 
@@ -114,38 +106,4 @@ if __name__ == '__main__':
         if i==50:
             break
     ffmpeg.input('testoutput/turtles2/%d.png', framerate=30).output('testoutput/turtles2/movie.mp4', '-y', loglevel='quiet').run()
-
-
-    # Comprehensive code
-    # Step 0
-    # args = parseargs()
-
-    # # Step 1 - Process frames
-    # video_capture = cv2.VideoCapture(args.video)
-    # video_capture.set(cv2.CAP_PROP_FPS, 30)
-
-    # saved_frame_name = 0
-    # ctr = 0
-
-    # while video_capture.isOpened():
-    #     frame_is_read, frame = video_capture.read()
-
-    #     ctr+=1
-    #     if frame_is_read:
-    #         # Process frame
-    #         img = frame
-    #         img = processimage(img)
-    #         diffusioncall(img)
-
-    #         # Save frame
-    #         cv2.imwrite(f"frame{str(saved_frame_name)}.jpg", frame)
-    #         saved_frame_name += 1
-
-    #     else:
-    #         print(f"Could not read frame num {ctr}.")
-
-    #     if ctr==3:
-    #         break
-
-    # # Step 3 - Stitch frames using ffmpeg
 
