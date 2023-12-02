@@ -35,7 +35,7 @@ Generated samples before and after fine-tuning.
 <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.jpg" width="256" />  <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_3.png" width="256" />
 
 
-### Image to Image Samples with edge input
+### Image to Image Samples with Edge Input
 
 
 <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge_cnh.png" width="256" />
