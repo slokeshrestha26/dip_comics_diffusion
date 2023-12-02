@@ -26,16 +26,19 @@ Generated samples before and after fine-tuning.
 
 ### Image to Image Samples
 
-![Bovik](samples/bovik/bovik_input.png?raw=True "Input image of Bovik" =128x)
-![Bovik in Calvin and Hobbes style](samples/bovik/bovik_3.png?raw=True "Bovik in Calvin and Hobbes style" =128x)
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.png" width="256" />
 
-![Jay Hartzell](samples/jay/jay_input.png?raw=True "Input image of Jay Hartzell" =128x)
-![Jay Hartzell in Calvin and Hobbes style](samples/jay/jay_4.png?raw=True "Jay Hartzell in Calvin and Hobbes style" =128x)
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_4.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_3.png" width="256" />
 
-![Bevo](samples/bevo/bevo_input.png?raw=True "Input image of Bevo" =128x)
-![Bevo in Calvin and Hobbes style](samples/bevo/bevo_3.png?raw=True "Bevo in Calvin and Hobbes style" =128x)
 
 ### Image to Image Samples with edge input
+
+
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge_cnh.png" width="256" />
+
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge_cnh.png" width="256" />
+
+
 
 ![Bovik](samples/bovik/bovik_input.png?raw=True "Input image of Bovik" =128x)
 ![Edge map input of Bovik](samples/bovik/bovik_edge.png?raw=True "Edge map input of Bovik" =128x)
