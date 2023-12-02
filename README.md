@@ -19,16 +19,14 @@ Here's a brief overview of the files.
 
 Generated samples before and after fine-tuning. 
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_1.png" width="128" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/dog_before.png" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/dog_after.png" width="128" />
 
-![Dog](samples/txt2img/dog_before.png =128x "Happy dog in a car")
-![Dog in Calvin and Hobbes style](samples/txt2img/dog_after.png?raw=True "Happy dog in a car in Calvin and Hobbes style" =128x)
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/police_before.png" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/police_after.png" width="128" />
 
-![Policeman](samples/txt2img/police_before.png?raw=True "Policeman" =128x)
-![Policeman in Calvin and Hobbes style](samples/txt2img/police_after.png?raw=True "Policeman in Calvin and Hobbes style" =128x)
-
-![Girl](samples/txt2img/girl_before.png?raw=True "Girl with a balloon" =128x)
-![Girl in Calvin and Hobbes style](samples/txt2img/girl_after.png?raw=True "Girl with a balloon in Calvin and Hobbes style" =128x)
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/girl_before.png" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/girl_after.png" width="128" />
 
 
 ### Image to Image Samples
