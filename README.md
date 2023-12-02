@@ -26,7 +26,7 @@ Generated samples before and after fine-tuning.
 
 ### Image to Image Samples
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.png" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_input.jpg" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.jpg" width="256" />
 
 <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_4.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_3.png" width="256" />
 
@@ -36,14 +36,4 @@ Generated samples before and after fine-tuning.
 
 <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_edge_cnh.png" width="256" />
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge_cnh.png" width="256" />
-
-
-
-![Bovik](samples/bovik/bovik_input.png?raw=True "Input image of Bovik" =128x)
-![Edge map input of Bovik](samples/bovik/bovik_edge.png?raw=True "Edge map input of Bovik" =128x)
-![Bovik in Calvin and Hobbes style](samples/bovik/bovik_edge_cnh.png?raw=True "Bovik in Calvin and Hobbes style" =128x)
-
-![Taylor Swift](samples/taylor/taylor_input.png?raw=True "Input image of Taylor Swift" =128x)
-![Edge map input of Taylor Swift](samples/taylor/taylor_edge.png?raw=True "Edge map input of Taylor Swift" =128x)
-![Taylor Swift in Calvin and Hobbes style](samples/taylor/taylor_edge_cnh.png?raw=True "Taylor Swift in Calvin and Hobbes style" =128x)
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_input.jpg" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/taylor/taylor_edge_cnh.png" width="256" />
