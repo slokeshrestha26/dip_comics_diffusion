@@ -1,4 +1,6 @@
-# DIP final project
+# Style Transfer Using Stable Diffusion
+
+> Contributors: @asvin-kumar, @slokeshrestha26, @ss26
 
 ## Code
 
