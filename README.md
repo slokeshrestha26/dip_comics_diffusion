@@ -26,9 +26,11 @@ Generated samples before and after fine-tuning.
 
 ### Image to Image Samples
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_input.jpg" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.jpg" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_input.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" />
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bovik/bovik_3.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_4.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_3.png" width="256" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_input.jpg" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/jay/jay_4.png" width="256" />
+
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_input.jpg" width="256" />  <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_3.png" width="256" />
 
 
 ### Image to Image Samples with edge input
