@@ -19,7 +19,7 @@ Here's a brief overview of the files.
 
 Generated samples before and after fine-tuning. 
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_1.png", width="128"/>
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/bevo/bevo_1.png" width="128" />
 
 ![Dog](samples/txt2img/dog_before.png =128x "Happy dog in a car")
 ![Dog in Calvin and Hobbes style](samples/txt2img/dog_after.png?raw=True "Happy dog in a car in Calvin and Hobbes style" =128x)
