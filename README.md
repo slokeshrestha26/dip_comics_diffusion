@@ -1,6 +1,6 @@
 # Style Transfer Using Stable Diffusion
 
-> Contributors: @asvin-kumar, @slokeshrestha26, @ss26
+> Contributors: [Asvin Venkataramanan](www.github.com/asvin-kumar), [Sloke Shrestha](www.github.com/slokeshrestha26), [Sundar Sripada V.S.](www.github.com/ss26)
 
 ## Code
 
