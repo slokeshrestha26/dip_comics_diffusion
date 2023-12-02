@@ -1,102 +1,51 @@
 # DIP final project
 
-## To Dos:
-- [X] Find the peanuts model (https://civitai.com/models/17361/peanuts-comics-art-style)
-- [X] Setup TACC
-- [X] Get the calvin and hobbes dataset
-- [X] Go through the diffusion model course (Sharon Zhou)
-- [ ] Debug the LoRA collab notebook
-- [ ] Read the HuggingFace LoRA implementation API
-- [ ] Read blogs on diffusion model fine tuning
-  - [ ] Civitai Wiki: https://github.com/civitai/civitai/wiki/How-to-use-models
-  - [ ] Blog 2:
-     
+## Code
 
-## Calvin & Hobbes Dataset
-- [X] Find a calvin and hobbes dataset
-- [X] Download it
-- [X] Extract images
-- [X] Select only the black and white panels
-- [X] Crop panels
+This code base was used to implement the final project for the course EE371Q Digital Image Processing. 
 
-## Blogs of Interest
-### Keyword conditioning
-1. https://octoml.ai/blog/the-beginners-guide-to-fine-tuning-stable-diffusion/ What's dreambooth, textual inversion and lora? Which one do we want to use?
+We used this code base to fine-tune a Diffusion model using the LoRA technique to convert images into the style of Calvin and Hobbes comics. 
+Here's a brief overview of the files. 
 
-### Finetuning on dataset
-1. Pokemon finetuning example: https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning  
-CUB Dataset: https://paperswithcode.com/dataset/cub-200-2011  
-CUB Dataset: https://huggingface.co/datasets/alkzar90/CC6204-Hackaton-Cub-Dataset/viewer/default/test
+* code/get_cnh_dataset.ipynb and code/get_cnh_dataset.py were used to download files from the Internet Archive and create the dataset. 
+* code/lora_example.sh and code/train_text_to_image_lora.py were used to fine-tune the diffusion model.
+* code/infer.py, code/infertext.py, code/infervideo.py were used to generate samples with the fine-tuned model.
+* code/utils.py and code/utils_slides.py were used for miscellaneous tasks. 
+* environment.yml has the packages required to run this code.
 
-2. Huggingface:  
-* a. Start here: https://huggingface.co/docs/diffusers/index  
-    i. Ctrl+F for "Image-to-Image Text-Guided Generation" on https://huggingface.co/docs/diffusers/v0.21.0/en/index  
-* b. LoRA: https://huggingface.co/docs/diffusers/training/lora  
-* c. Training Examples: https://huggingface.co/docs/diffusers/training/overview  
-* d. Controlnet: https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet  
-* e. Text2Img: https://huggingface.co/docs/diffusers/training/text2image  
+## Samples
 
-## Plan
-So, here's what HuggingFace did for a the ghibli LoRA example.
-* They took a txt2img ghibli diffusion model. 
-* Passed it through an img2img pipeline. 
-* Got outputs. 
+### Text to Image Samples
 
-We're gonna do something very similar. 
-* We're gonna fine-tune a txt2img LoRA model for calvin and hobbes. 
-* We're gonna plug that into an img2img pipeline.
-* We're gonna use [controlnet](https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/controlnet) to create masks/edges of the an input image.
-* We're gonna get outputs.
+Generated samples before and after fine-tuning. 
 
-## Experiments to try
-1. LoRA  
-2. DreamBooth  
-3. Textual Inversion
-4. Fine-tune existing cartoonifier [checkpoint](https://civitai.com/models/17368/pseudo-peanuts-cartoonifier-art-style)  
-5. Increasing training input size
-6. Inference - jay hartzell, bevo, taylor swift, mona lisa and other famous paintings
+![Dog](samples/txt2img/dog_before.png?raw=True "Happy dog in a car")
+![Dog in Calvin and Hobbes style](samples/txt2img/dog_after.png?raw=True "Happy dog in a car in Calvin and Hobbes style")
 
-DreamBooth training examples:  
-1. https://github.com/nitrosocke/dreambooth-training-guide
-2. https://huggingface.co/docs/diffusers/training/dreambooth
+![Policeman](samples/txt2img/police_before.png?raw=True "Policeman")
+![Policeman in Calvin and Hobbes style](samples/txt2img/police_after.png?raw=True "Policeman in Calvin and Hobbes style")
 
-Textual Inversion examples:
-1. https://huggingface.co/docs/diffusers/training/text_inversion
-2. https://huggingface.co/docs/diffusers/using-diffusers/textual_inversion_inference
-
-LoRA training training examples:
-1. cloneofsimo script
-2. https://huggingface.co/docs/diffusers/training/lora#texttoimage
-3. (Example) https://huggingface.co/docs/diffusers/v0.21.0/en/using-diffusers/img2img
-
-## Log into TACC
-`ssh asvin@ls6.tacc.utexas.edu`  
-LuckyMonkey!!  
-\< Get TACC Code from Asvin \>
-
-TACC has three main directories, 
-1. /home/
-2. /work/
-3. /scratch/
-
-Use /home just as a login landing page. Don't save anything here. 
-
-Use /work to put all code. Create a folder for our project here.
-
-Use /scratch for saving datasets. If data saved here is not modified/accessed once in every 2 weeks it'll get deleted.
-
-Use command `cdw` to go to the /work directory.
-Use command `cds` to go the /scratch directory.
-You can also do `cdw folder-name` to directly navigate to that folder in /work. This format works for /scratch too.
-
-Ask for a compute node using the following command:
-`idev -N 1 -p gpu-a100 -m 4:00:00`
-Use `-p normal` if you don't need GPUs.  
-Use `-m 60:00` if you want it for 60 mins or `-t 1:0:0` if you want it for 2 hours.  
-Use `-N 2` if you need 2 nodes instead.  
-
-Use the conda env at `dip/`
-Use the following command to activate: `conda activate dip`
+![Girl](samples/txt2img/girl_before.png?raw=True "Girl with a balloon")
+![Girl in Calvin and Hobbes style](samples/txt2img/girl_after.png?raw=True "Girl with a balloon in Calvin and Hobbes style")
 
 
+### Image to Image Samples
 
+![Bovik](samples/bovik/bovik_input.png?raw=True "Input image of Bovik")
+![Bovik in Calvin and Hobbes style](samples/bovik/bovik_3.png?raw=True "Bovik in Calvin and Hobbes style")
+
+![Jay Hartzell](samples/jay/jay_input.png?raw=True "Input image of Jay Hartzell")
+![Jay Hartzell in Calvin and Hobbes style](samples/jay/jay_4.png?raw=True "Jay Hartzell in Calvin and Hobbes style")
+
+![Bevo](samples/bevo/bevo_input.png?raw=True "Input image of Bevo")
+![Bevo in Calvin and Hobbes style](samples/bevo/bevo_3.png?raw=True "Bevo in Calvin and Hobbes style")
+
+### Image to Image Samples with edge input
+
+![Bovik](samples/bovik/bovik_input.png?raw=True "Input image of Bovik")
+![Edge map input of Bovik](samples/bovik/bovik_edge.png?raw=True "Edge map input of Bovik")
+![Bovik in Calvin and Hobbes style](samples/bovik/bovik_edge_cnh.png?raw=True "Bovik in Calvin and Hobbes style")
+
+![Taylor Swift](samples/taylor/taylor_input.png?raw=True "Input image of Taylor Swift")
+![Edge map input of Taylor Swift](samples/taylor/taylor_edge.png?raw=True "Edge map input of Taylor Swift")
+![Taylor Swift in Calvin and Hobbes style](samples/taylor/taylor_edge_cnh.png?raw=True "Taylor Swift in Calvin and Hobbes style")

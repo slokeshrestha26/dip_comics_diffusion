@@ -216,4 +216,4 @@ dependencies:
       - pfzy==0.3.4
       - prompt-toolkit==3.0.41
       - wcwidth==0.2.12
-prefix: /work/09175/asvin/ls6/miniconda3/envs/dip
+prefix: ~/env
