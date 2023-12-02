@@ -19,7 +19,7 @@ Here's a brief overview of the files.
 
 Generated samples before and after fine-tuning. 
 
-![Dog](samples/txt2img/dog_before.png?raw=True  =128x "Happy dog in a car")
+![Dog](samples/txt2img/dog_before.png?raw=True =128x "Happy dog in a car")
 ![Dog in Calvin and Hobbes style](samples/txt2img/dog_after.png?raw=True "Happy dog in a car in Calvin and Hobbes style" =128x)
 
 ![Policeman](samples/txt2img/police_before.png?raw=True "Policeman" =128x)
