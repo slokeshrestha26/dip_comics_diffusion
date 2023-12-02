@@ -21,7 +21,7 @@ Generated samples before and after fine-tuning.
 
 <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/dog_before.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/police_before.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/girl_before.png" width="256" />
 
-<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/dog_after.png" width="128" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/police_after.png" width="128" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/girl_after.png" width="128" />
+<img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/dog_after.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/police_after.png" width="256" /> <img src="https://github.com/slokeshrestha26/dip_comics_diffusion/blob/main/samples/txt2img/girl_after.png" width="256" />
 
 
 ### Image to Image Samples
