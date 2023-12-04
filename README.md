@@ -4,6 +4,8 @@
 
 > This project was EE 371Q Digital Image Processing Ram’s Horn Day 2 Winner. EE 371Q is a famous class taught by [Prof. Alam Bovik](https://www.ece.utexas.edu/people/faculty/alan-bovik) at University of Texas at Austin
 
+> Video presentation available at: [YouTube](https://youtu.be/kMGjOr974vE)
+
 ## Code
 
 This code base was used to implement the final project for the course EE371Q Digital Image Processing. 
