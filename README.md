@@ -1,6 +1,7 @@
 # Style Transfer Using Stable Diffusion
 
 > Contributors: [Asvin Venkataramanan](https://github.com/asvin-kumar), [Sloke Shrestha](https://github.com/slokeshrestha26), [Sundar Sripada V.S.](https://github.com/ss26)
+
 > This project was EE 371Q Digital Image Processing Ram’s Horn Day 2 Winner. EE 371Q is a famous class taught by [Prof. Alam Bovik](https://www.ece.utexas.edu/people/faculty/alan-bovik) at University of Texas at Austin
 
 ## Code
