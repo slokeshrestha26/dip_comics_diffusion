@@ -2,7 +2,7 @@
 
 > Contributors: [Asvin Venkataramanan](https://github.com/asvin-kumar), [Sloke Shrestha](https://github.com/slokeshrestha26), [Sundar Sripada V.S.](https://github.com/ss26)
 
-> We won the EE 371Q Digital Image Processing Ram’s Horn best project award!! EE 371Q is a famous class taught by [Prof. Alam Bovik](https://www.ece.utexas.edu/people/faculty/alan-bovik) at University of Texas at Austin
+> We won the EE 371Q Digital Image Processing Ram’s Horn best project award!! EE 371Q is a famous class taught by [Prof. Alan Bovik](https://www.ece.utexas.edu/people/faculty/alan-bovik) at University of Texas at Austin
 
 > Video presentation available at:
 
