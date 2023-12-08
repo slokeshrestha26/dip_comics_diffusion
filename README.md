@@ -1,4 +1,4 @@
-# [Style Transfer Using Stable Diffusion] (http://arxiv.org/abs/2312.03993)
+# Style Transfer Using Stable Diffusion
 
 > Contributors: [Asvin Venkataramanan](https://github.com/asvin-kumar), [Sloke Shrestha](https://github.com/slokeshrestha26), [Sundar Sripada V.S.](https://github.com/ss26)
 
@@ -7,6 +7,9 @@
 > Video presentation available at:
 
 [![YouTube](https://img.youtube.com/vi/kMGjOr974vE/0.jpg)](https://www.youtube.com/watch?v=kMGjOr974vE)
+
+> Report available at:
+> [Style Transfer Using Stable Diffusion](http://arxiv.org/abs/2312.03993))
 
 ## Code
 
