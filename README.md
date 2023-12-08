@@ -1,4 +1,4 @@
-# Style Transfer Using Stable Diffusion
+# [Style Transfer Using Stable Diffusion] (http://arxiv.org/abs/2312.03993)
 
 > Contributors: [Asvin Venkataramanan](https://github.com/asvin-kumar), [Sloke Shrestha](https://github.com/slokeshrestha26), [Sundar Sripada V.S.](https://github.com/ss26)
 
